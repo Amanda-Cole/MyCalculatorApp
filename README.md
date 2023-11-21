@@ -23,8 +23,8 @@ I used the kotlin language, and the android libraries.
 # Useful Websites
 
 
-- [Android Studio Essential training 2023]([http://url.link.goes.here](https://www.youtube.com/watch?v=i8z3KIbe1xY))
-- [Creating Your First Kotlin App]([http://url.link.goes.here](https://www.youtube.com/watch?v=0bfEO6z-Bgs))
+- [Android Studio Essential training 2023](https://www.youtube.com/watch?v=i8z3KIbe1xY)
+- [Creating Your First Kotlin App](https://www.youtube.com/watch?v=0bfEO6z-Bgs)
 
 # Future Work
 
