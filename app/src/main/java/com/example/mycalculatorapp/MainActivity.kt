@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.mycalculatorapp.databinding.ActivityMainBinding
-import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
@@ -79,21 +78,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun calculateResults(): String
     {
-        //val digitsOperators = digitsOperators()
-        //if (digitsOperators.isEmpty()) return ""
-
-       // val timesDivision = timesDivisionCalculate(digitsOperators)
-        //if (timesDivision.isEmpty()) return ""
-
-        //val result = addSubtractCalculate(timesDivision)
-        //return result.toString()
         val digitsOperators = digitsOperators()
 
         return when {
             digitsOperators.isEmpty() -> ""
             else -> addSubtractCalculate(timesDivisionCalculate(digitsOperators)).toString()
         }
-
     }
 
     private fun addSubtractCalculate(passedList: MutableList<Any>): Float
@@ -125,8 +115,6 @@ class MainActivity : AppCompatActivity() {
             list= calcTimesDiv(list)
         }
         return list
-
-
     }
 
     private fun calcTimesDiv(passedList: MutableList<Any>): MutableList<Any>
@@ -187,12 +175,8 @@ class MainActivity : AppCompatActivity() {
                 list.add(character)
             }
         }
-
         if(currentDigit != "")
             list.add(currentDigit.toFloat())
-
-
         return list
     }
-
 }
